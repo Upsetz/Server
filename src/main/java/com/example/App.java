@@ -25,8 +25,11 @@ public class App
 
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             DataOutputStream out = new DataOutputStream(s.getOutputStream());
-            
+
             String stringaRicevuta = in.readLine();
+
+            System.out.println("String ottenuta");
+
             String stringaMaiuscola = stringaRicevuta.toUpperCase();
 
             out.writeBytes(stringaMaiuscola);
